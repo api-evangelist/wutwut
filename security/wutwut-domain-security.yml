@@ -1,0 +1,32 @@
+generated: '2026-07-21'
+method: probed
+source: probe (curl + dig) of wutwut.com; probe-domain-security.py reported host unreachable over HTTPS
+note: >-
+  wutwut.com is a suspended/parked domain. HTTPS (port 443) refuses connections;
+  HTTP serves a Key-Systems GmbH registrar "ICANN contact verification suspension"
+  page (Last-Modified 2021-04-08) as a catch-all for every path. The DNS zone is
+  delegated to the registrar's suspension nameservers (ns1/ns2.emailverification.info).
+  Absence of records below is real probed data.
+hosts:
+  - host: wutwut.com
+    ip: 94.23.162.163
+    https: false
+    https_error: connection refused (port 443)
+    http_status: 200
+    http_note: registrar suspension page (nginx/1.18.0 Ubuntu), catch-all for all paths
+    tls_version: null
+    hsts: false
+  - host: www.wutwut.com
+    ip: 94.23.162.163
+    https: false
+    https_error: connection refused (port 443)
+    http_status: 200
+domains:
+  - domain: wutwut.com
+    nameservers: [ns1.emailverification.info, ns2.emailverification.info]
+    dnssec: false
+    caa: []
+    spf: false
+    dmarc: false
+    dmarc_policy: null
+    mx: []

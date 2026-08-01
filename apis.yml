@@ -1,7 +1,23 @@
 aid: wutwut
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/wutwut.png
 name: wutwut
-description: wutwut is a company surfaced as a portfolio company of slow-ventures and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: wutwut is a former Slow Ventures portfolio company listed on the firm's
+  portfolio page. Its domain, wutwut.com, is suspended - HTTPS refuses connections
+  and HTTP has served a registrar ICANN contact-verification suspension page since
+  2021 - and no public product, developer program, or API surface could be found.
+  This profile remains in the API Evangelist network as a venture-portfolio lead
+  record documenting that probe result.
 url: https://raw.githubusercontent.com/api-evangelist/wutwut/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +25,16 @@ x-backed-by:
 - slow-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: inactive-domain-suspended
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Startup
+- Venture Portfolio
+- Slow Ventures
+- Inactive
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +44,12 @@ maintainers:
 common:
 - type: Website
   url: https://wutwut.com
+- type: DomainSecurity
+  url: security/wutwut-domain-security.yml
+- type: LLMsTxt
+  url: llms/wutwut-llms.txt
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1

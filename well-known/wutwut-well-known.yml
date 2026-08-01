@@ -1,0 +1,40 @@
+generated: '2026-07-21'
+method: searched
+host: http://wutwut.com
+note: >-
+  No genuine well-known documents exist. wutwut.com is suspended: HTTPS refuses
+  connections and the HTTP server returns the same text/html registrar suspension
+  page (HTTP 200) as a catch-all for every path probed below, so the 200 statuses
+  are false positives. No raw files were saved because none of the responses are
+  real discovery documents.
+documents:
+  - path: /.well-known/security.txt
+    status: 200
+    catch_all: true
+    content_type: text/html
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 200
+    catch_all: true
+    content_type: text/html
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    catch_all: true
+    content_type: text/html
+    file: null
+  - path: /.well-known/api-catalog
+    status: 200
+    catch_all: true
+    content_type: text/html
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    catch_all: true
+    content_type: text/html
+    file: null
+  - path: /llms.txt
+    status: 200
+    catch_all: true
+    content_type: text/html
+    file: null
