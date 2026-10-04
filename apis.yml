@@ -42,13 +42,11 @@ created: '2026-07-17'
 modified: '2026-07-21'
 tags:
 - Company
-- Startups
 - Venture Portfolio
 - Slow Ventures
 - Inactive
 tags_raw:
 - Company
-- Startup
 - Venture Portfolio
 - Slow Ventures
 - Inactive
@@ -70,3 +68,7 @@ x-enrichment:
   status: minimal
   artifacts_added: 3
   pass: local-v1
+x-tags-removed:
+- Startups
+x-company-stage: venture-backed
+x-company-stage-evidence: "own tags: Startup, Venture Portfolio, Slow Ventures"
